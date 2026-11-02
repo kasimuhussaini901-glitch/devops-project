@@ -1,2 +1,5 @@
-# Jenkins DevOps Project
-Pipeline with stages: Checkout, Build, Test, Deploy, Logging
+FROM openjdk:11-jdk
+WORKDIR /app
+COPY . .
+RUN echo "Building application"
+CMD ["echo", "Application deployed successfully"]
